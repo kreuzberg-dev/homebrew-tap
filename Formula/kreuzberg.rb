@@ -14,7 +14,7 @@ class Kreuzberg < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", "--features", "api,mcp,mcp-http,bundled-pdfium", *std_cargo_args(path: "crates/kreuzberg-cli")
+    system "cargo", "install", "--features", "api,mcp,mcp-http", *std_cargo_args(path: "crates/kreuzberg-cli")
   end
 
   test do

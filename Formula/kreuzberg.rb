@@ -9,6 +9,14 @@ class Kreuzberg < Formula
   license "MIT"
   head "https://github.com/kreuzberg-dev/kreuzberg.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.0.0-rc.18"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "placeholder_will_update_after_build"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "placeholder_will_update_after_build"
+    sha256 cellar: :any_skip_relocation, ventura: "placeholder_will_update_after_build"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "placeholder_will_update_after_build"
+  end
+
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "rust" => :build

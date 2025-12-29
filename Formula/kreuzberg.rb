@@ -20,6 +20,11 @@ class Kreuzberg < Formula
     sha256 cellar: :any_skip_relocation, arm64_sequoia: "a196fb85918756b6fc0845161f6f29b4419b2b3bd2c970d529e59f032007df6d"
   end
 
+  bottle do
+    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.0.0-rc.22"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f670988bfbce3357d44d1baf1c1a72271ac4394dbe2f6192b1eac8c74b0d0522"
+  end
+
   depends_on "cmake" => :build
   bottle do
     root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.0.0-rc.22"
@@ -31,6 +36,11 @@ class Kreuzberg < Formula
     sha256 cellar: :any_skip_relocation, arm64_sequoia: "a196fb85918756b6fc0845161f6f29b4419b2b3bd2c970d529e59f032007df6d"
   end
 
+  bottle do
+    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.0.0-rc.22"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f670988bfbce3357d44d1baf1c1a72271ac4394dbe2f6192b1eac8c74b0d0522"
+  end
+
   depends_on "pkg-config" => :build
   bottle do
     root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.0.0-rc.22"
@@ -40,6 +50,11 @@ class Kreuzberg < Formula
   bottle do
     root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.0.0-rc.22"
     sha256 cellar: :any_skip_relocation, arm64_sequoia: "a196fb85918756b6fc0845161f6f29b4419b2b3bd2c970d529e59f032007df6d"
+  end
+
+  bottle do
+    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.0.0-rc.22"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f670988bfbce3357d44d1baf1c1a72271ac4394dbe2f6192b1eac8c74b0d0522"
   end
 
   depends_on "rust" => :build

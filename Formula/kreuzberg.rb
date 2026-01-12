@@ -5,7 +5,7 @@ class Kreuzberg < Formula
   desc "High-performance document intelligence CLI"
   homepage "https://kreuzberg.dev"
   url "https://github.com/kreuzberg-dev/kreuzberg/archive/v4.0.1.tar.gz"
-  sha256 "f9717e5db360186a8f0293f273da61ca8dcfc6c03dad301b144413303dfcdb0e"
+  sha256 "e334aa2169a846fde7c9e181df45262144b08146e7c312f447d3737659186da5"
   license "MIT"
   head "https://github.com/kreuzberg-dev/kreuzberg.git", branch: "main"
 

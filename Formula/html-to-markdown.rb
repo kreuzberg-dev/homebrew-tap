@@ -30,9 +30,10 @@ class HtmlToMarkdown < Formula
 
 
 
+
   bottle do
     root_url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v2.23.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "99873e0387cc3f631f48ed9fecd5ae8839e641add03b1ec2a1afea1de62fd9ac"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "7cef8b6f3bbf0ac83e75d6c5abdc678e0b52bb2c35dea1b7302179076b82ab88"
   end
 
   depends_on "rust" => :build

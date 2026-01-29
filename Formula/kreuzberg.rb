@@ -11,7 +11,7 @@ class Kreuzberg < Formula
 
   bottle do
     root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.2.3"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "3a58494bdc4174b64a972893397e07cc85107287452d06b9fe65717492cfed6f"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bba5999cf276f7d97bdfd29fee72969aff51b1ccc3d877a1e966ff8f8b7dd631"
   end
 
   depends_on "cmake" => :build

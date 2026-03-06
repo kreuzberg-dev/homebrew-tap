@@ -2,8 +2,9 @@ class HtmlToMarkdown < Formula
   desc "High-performance HTML to Markdown converter powered by Rust"
   homepage "https://github.com/kreuzberg-dev/html-to-markdown"
   url "https://github.com/kreuzberg-dev/html-to-markdown/archive/v2.28.0.tar.gz"
-  sha256 "138e62e26d660a7b3196b726b0dbcc2ad20555b1ab3f0bc311f317abea78cb87"
+  sha256 "2d251a3ab2e1434a13bc4fb92279d3613f7ed11f9fa5fcc988f0f2fb6fc72339"
   license "MIT"
+
 
 
 
@@ -72,7 +73,7 @@ class HtmlToMarkdown < Formula
 
   bottle do
     root_url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v2.28.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "0bbafa67fcc8e3d2012921eeaf481ca3b61c591aeb19dcb53bb2ec409627346c"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bbc3e679cf7e8ef56ef87ac647946ecc57310f34e693908b584f8273ac4b39af"
   end
 
   depends_on "rust" => :build

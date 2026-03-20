@@ -4,14 +4,14 @@
 class Kreuzberg < Formula
   desc "High-performance document intelligence CLI"
   homepage "https://kreuzberg.dev"
-  url "https://github.com/kreuzberg-dev/kreuzberg/archive/v4.4.6.tar.gz"
-  sha256 "ff09c94ffcc33b9009001b344e5c234df1df84878720a2b389108dc717e1fa0a"
+  url "https://github.com/kreuzberg-dev/kreuzberg/archive/v4.5.1.tar.gz"
+  sha256 "5ec77429be3b8720a08bb160c3874b01ed6c63a4d90a9dd5f6cd4331d165187e"
   license "MIT"
   head "https://github.com/kreuzberg-dev/kreuzberg.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.4.6"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "d109a5c025f5bfa86504edc74269461ee51009e88624524d35a72a8a7cf7bddf"
+    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.5.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "103c41afd3a18023d52402784580208a2444a02494c8e7f75c54d377d849d5ea"
   end
 
   depends_on "cmake" => :build

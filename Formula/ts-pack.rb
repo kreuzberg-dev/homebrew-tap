@@ -4,13 +4,13 @@
 class TsPack < Formula
   desc "Tree-sitter language pack CLI - download and manage 170+ parser grammars"
   homepage "https://github.com/kreuzberg-dev/tree-sitter-language-pack"
-  url "https://github.com/kreuzberg-dev/tree-sitter-language-pack/archive/v1.3.0.tar.gz"
-  sha256 "a395496fcd181382a31c47df77cfae97c7d47f608958ce0f06afbbb080c6819b"
+  url "https://github.com/kreuzberg-dev/tree-sitter-language-pack/archive/v1.3.1.tar.gz"
+  sha256 "97b636bb011423ffc632ddf4744ce9b6605f3c95566a0bdff04c117ba6d7ac6b"
   license any_of: ["MIT", "Apache-2.0"]
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/tree-sitter-language-pack/releases/download/v1.3.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e775e00eac5bb4d4c6228eacc0d0a8afeae54e435006d01040168afe854982a3"
+    root_url "https://github.com/kreuzberg-dev/tree-sitter-language-pack/releases/download/v1.3.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "386ac102708f158faefd397effc6c9036e9d083c6e2d0c969256dc5a372d4d48"
   end
 
   depends_on "rust" => :build

@@ -19,6 +19,7 @@ class Kreuzberg < Formula
   depends_on "rust" => :build
 
   def install
+    ENV["OPENSSL_DIR"] = Formula["openssl"].opt_prefix 
     system "cargo", "install", "--features", "api,mcp,mcp-http", *std_cargo_args(path: "crates/kreuzberg-cli")
   end
 

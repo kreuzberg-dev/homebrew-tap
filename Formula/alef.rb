@@ -5,13 +5,13 @@
 class Alef < Formula
   desc "Opinionated polyglot binding generator for Rust libraries"
   homepage "https://github.com/kreuzberg-dev/alef"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kreuzberg-dev/alef/releases/download/v0.3.2/alef-aarch64-apple-darwin.tar.gz"
-      sha256 "721e7bf4c76cac9830e982e6b790ca84ef1272335be7714794d33702de94a15f"
+      url "https://github.com/kreuzberg-dev/alef/releases/download/v0.3.3/alef-aarch64-apple-darwin.tar.gz"
+      sha256 "a5927f5bb66ff108e35c4bf348c66bf864a9c3a65cdb30be7a1f4ead4eb35c84"
 
       define_method(:install) do
         bin.install "alef"
@@ -21,15 +21,15 @@ class Alef < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kreuzberg-dev/alef/releases/download/v0.3.2/alef-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4a30fa97db9a8bfb3f5922b1cd45b45667a3370558dd357e6f7b88cf62bda966"
+      url "https://github.com/kreuzberg-dev/alef/releases/download/v0.3.3/alef-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b7b68bd46623284974bad6dbe5d29ac59228e5181bb6dad48b73a8d0fced46f7"
       define_method(:install) do
         bin.install "alef"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kreuzberg-dev/alef/releases/download/v0.3.2/alef-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6a30d77b1d3221a96c92da8a09916032d48e3189800d465d05513b027e530a2d"
+      url "https://github.com/kreuzberg-dev/alef/releases/download/v0.3.3/alef-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "10974b4239cf47047a86927bf7175f9f2ea14a8971b4e8209fc6791499a1e53e"
       define_method(:install) do
         bin.install "alef"
       end

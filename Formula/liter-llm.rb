@@ -4,14 +4,14 @@
 class LiterLlm < Formula
   desc "OpenAI-compatible LLM proxy server and MCP tool server"
   homepage "https://kreuzberg.dev"
-  url "https://github.com/kreuzberg-dev/liter-llm/archive/v1.2.1.tar.gz"
+  url "https://github.com/kreuzberg-dev/liter-llm/archive/v1.2.2.tar.gz"
   sha256 "PLACEHOLDER"
   license "MIT"
   head "https://github.com/kreuzberg-dev/liter-llm.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/liter-llm/releases/download/v1.2.1"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9f78f972afb53839862e19437d16a134f81b6c2821476d6fe0635928258ae866"
+    root_url "https://github.com/kreuzberg-dev/liter-llm/releases/download/v1.2.2"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "c7243f85ae96c33a24f926522c81552ed10ecef88c360295cafc947fdf7fc7cb"
   end
 
   depends_on "rust" => :build

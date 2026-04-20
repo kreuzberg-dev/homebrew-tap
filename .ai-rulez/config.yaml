@@ -12,3 +12,5 @@ builtins:
 
 presets:
   - claude
+  - codex
+  - copilot

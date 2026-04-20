@@ -2,3 +2,8 @@
 .claude/
 CLAUDE.md
 .mcp.json
+
+# AI Rules generated files
+.codex/
+AGENTS.md
+.github/copilot-instructions.md

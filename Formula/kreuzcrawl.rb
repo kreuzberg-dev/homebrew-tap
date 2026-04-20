@@ -11,7 +11,7 @@ class Kreuzcrawl < Formula
 
   bottle do
     root_url "https://github.com/kreuzberg-dev/kreuzcrawl/releases/download/v0.1.1"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "674bff56f1b643369c1ed43f282425daf59cee8b681d50e07fd3aacd8d093f4c"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "077ea647dfb02f30a545cd5ec1fc383a31066b329be9cef1c04ffe71c5518d6e"
   end
 
   depends_on 'cmake' => :build

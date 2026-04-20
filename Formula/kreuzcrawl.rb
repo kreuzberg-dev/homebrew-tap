@@ -10,8 +10,8 @@ class Kreuzcrawl < Formula
   head 'https://github.com/kreuzberg-dev/kreuzcrawl.git', branch: 'main'
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/kreuzcrawl/releases/download/v0.1.0-rc.10"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b433c0134644c2addc43b6169f95a44a4c95ad6feb240a050bc16449a6766bb8"
+    root_url "https://github.com/kreuzberg-dev/kreuzcrawl/releases/download/v0.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bde00462bcd38fdab7321cfc9e0e4277b14104fbbf9f4a66c319253e8b773053"
   end
 
   depends_on 'cmake' => :build

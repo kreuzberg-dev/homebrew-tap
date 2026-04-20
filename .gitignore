@@ -7,3 +7,8 @@ CLAUDE.md
 .codex/
 AGENTS.md
 .github/copilot-instructions.md
+
+# AI Rules generated files
+.agents/
+.cursor/
+GEMINI.md

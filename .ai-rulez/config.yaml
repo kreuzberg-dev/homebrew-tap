@@ -14,3 +14,5 @@ presets:
   - claude
   - codex
   - copilot
+  - cursor
+  - antigravity

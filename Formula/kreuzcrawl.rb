@@ -2,25 +2,26 @@
 # frozen_string_literal: true
 
 class Kreuzcrawl < Formula
-  desc "High-performance web crawling engine CLI"
-  homepage "https://github.com/kreuzberg-dev/kreuzcrawl"
-  url "https://github.com/kreuzberg-dev/kreuzcrawl/archive/v0.1.0-rc.9.tar.gz"
-  sha256 "3fb91894ecba04ca49faa68d58df99d41cddf8e4f69262ab34d30a88ee98b90d"
-  license "Elastic-2.0"
-  head "https://github.com/kreuzberg-dev/kreuzcrawl.git", branch: "main"
+  desc 'High-performance web crawling engine CLI'
+  homepage 'https://github.com/kreuzberg-dev/kreuzcrawl'
+  url 'https://github.com/kreuzberg-dev/kreuzcrawl/archive/v0.1.0-rc.9.tar.gz'
+  sha256 '3fb91894ecba04ca49faa68d58df99d41cddf8e4f69262ab34d30a88ee98b90d'
+  license 'Elastic-2.0'
+  head 'https://github.com/kreuzberg-dev/kreuzcrawl.git', branch: 'main'
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/kreuzcrawl/releases/download/v0.1.0-rc.9"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b6178c28c5d7a6965a4d07e92f4754c02b9beb1bd4159cd829fa902d6ebf3f84"
+    root_url 'https://github.com/kreuzberg-dev/kreuzcrawl/releases/download/v0.1.0-rc.9'
+    sha256 cellar: :any_skip_relocation,
+           arm64_sequoia: 'b6178c28c5d7a6965a4d07e92f4754c02b9beb1bd4159cd829fa902d6ebf3f84'
   end
 
-  depends_on "cmake" => :build
-  depends_on "pkg-config" => :build
-  depends_on "rust" => :build
+  depends_on 'cmake' => :build
+  depends_on 'pkg-config' => :build
+  depends_on 'rust' => :build
 
   def install
-    ENV["OPENSSL_DIR"] = Formula["openssl"].opt_prefix
-    system "cargo", "install", "--features", "api,mcp,mcp-http", *std_cargo_args(path: "crates/kreuzcrawl-cli")
+    ENV['OPENSSL_DIR'] = Formula['openssl'].opt_prefix
+    system 'cargo', 'install', '--features', 'api,mcp,mcp-http', *std_cargo_args(path: 'crates/kreuzcrawl-cli')
   end
 
   test do

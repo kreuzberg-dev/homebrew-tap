@@ -1,0 +1,19 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2
+
+# Homebrew formulas use hyphenated filenames by convention
+Naming/FileName:
+  Enabled: false
+
+# Homebrew formula classes don't need doc comments
+Style/Documentation:
+  Enabled: false
+
+# Homebrew heredocs use EOS by convention
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
+# Formula files can exceed default line length
+Layout/LineLength:
+  Max: 150

@@ -1,0 +1,43 @@
+repos:
+  - repo: https://github.com/Goldziher/ai-rulez
+    rev: v3.14.2
+    hooks:
+      - id: ai-rulez-generate
+
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: check-added-large-files
+
+  # Ruby formatting and linting
+  - repo: https://github.com/rubocop/rubocop
+    rev: v1.86.1
+    hooks:
+      - id: rubocop
+        args: [--autocorrect]
+
+  # Typos
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.45.1
+    hooks:
+      - id: typos
+
+  # Shell
+  - repo: https://github.com/scop/pre-commit-shfmt
+    rev: v3.13.1-1
+    hooks:
+      - id: shfmt
+
+  # Commit message linting
+  - repo: https://github.com/Goldziher/gitfluff
+    rev: v0.8.0
+    hooks:
+      - id: gitfluff-lint
+        args: ["--write"]
+        stages: [commit-msg]

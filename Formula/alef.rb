@@ -43,5 +43,5 @@ end
 
   bottle do
     root_url "https://github.com/kreuzberg-dev/alef/releases/download/v0.5.1"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "423b52f7b98ece0a4c780b9aa33e962becbaf53408765ed624561913c9f8869e"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "8795e8af059d4e727b45336e77f7e2e505937234d7cd1ffc6911a8c9e027defa"
   end

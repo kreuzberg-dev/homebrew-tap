@@ -6,7 +6,7 @@ name = 'homebrew-tap'
 description = 'Homebrew tap with formulas for kreuzberg-dev CLI tools'
 gitignore = true
 presets = ['claude', 'codex', 'copilot', 'cursor', 'antigravity']
-builtins = ['ruby', 'git-workflow', 'code-quality', 'default-commands']
+builtins = ['ruby', 'default-commands']
 
 [[includes]]
 name = 'kreuzberg-core'

@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/Goldziher/ai-rulez
-    rev: v3.14.2
+    rev: v4.0.6
     hooks:
       - id: ai-rulez-generate
 

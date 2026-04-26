@@ -10,9 +10,8 @@ class LiterLlm < Formula
   head 'https://github.com/kreuzberg-dev/liter-llm.git', branch: 'main'
 
   bottle do
-    root_url 'https://github.com/kreuzberg-dev/liter-llm/releases/download/v1.2.2'
-    sha256 cellar: :any_skip_relocation,
-           arm64_sequoia: 'c7243f85ae96c33a24f926522c81552ed10ecef88c360295cafc947fdf7fc7cb'
+    root_url "https://github.com/kreuzberg-dev/liter-llm/releases/download/v1.4.0-rc.2"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "93eea1b384e01b7a72aeb8e2f7969fea334d57db27a9b7b535daa8064301073a"
   end
 
   depends_on 'rust' => :build

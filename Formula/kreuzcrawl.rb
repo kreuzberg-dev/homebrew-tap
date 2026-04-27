@@ -5,13 +5,13 @@ class Kreuzcrawl < Formula
   desc 'High-performance web crawling engine CLI'
   homepage 'https://github.com/kreuzberg-dev/kreuzcrawl'
   url 'https://github.com/kreuzberg-dev/kreuzcrawl/archive/v0.1.0-rc.9.tar.gz'
-  sha256 '6050fbbc0a47d88e2ecd557672a302405e8e1726d7b57b3fa7e9f8fd09e071c6'
+  sha256 "53db9b0cee27e6bf48e034e161b8e56a223994e2dba7f24a756af3f52986ecb8"
   license 'Elastic-2.0'
   head 'https://github.com/kreuzberg-dev/kreuzcrawl.git', branch: 'main'
 
   bottle do
-    root_url 'https://github.com/kreuzberg-dev/kreuzcrawl/releases/download/v0.3.0-rc.2'
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: '95590651e81c5fd1843a16fab155e50764ed296fba9dab5cc8c3a7d9747339d7'
+    root_url "https://github.com/kreuzberg-dev/kreuzcrawl/releases/download/v0.3.0-rc.3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "129576b74a651bb9fb71ba33acc7c7cd38876c07db59d22f70230369603f85a5"
   end
 
   depends_on 'cmake' => :build

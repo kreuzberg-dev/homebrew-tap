@@ -5,15 +5,15 @@ class TsPack < Formula
   desc 'Tree-sitter language pack CLI - download and manage 170+ parser grammars'
   homepage 'https://github.com/kreuzberg-dev/tree-sitter-language-pack'
   url 'https://github.com/kreuzberg-dev/tree-sitter-language-pack/archive/v1.6.2.tar.gz'
-  sha256 'b4b952af0c53bc33025b28842766cac8c2202b996858b68b3c6fe4a913d9dc4e'
+  sha256 "3fb4456316b6cc65b181d4d81a7550f244ca757fc711db5655a46c20659e4944"
   license any_of: ['MIT', 'Apache-2.0']
 
   bottle do
-    root_url 'https://github.com/kreuzberg-dev/tree-sitter-language-pack/releases/download/v1.8.0-rc.4'
-    sha256 cellar: :any_skip_relocation, arm64_linux: 'a9d563d5b48459fc8448fa3cad71d5fb228dbb04d1faf2d9cf5f54b801825de4'
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: 'e891b6e556079735605585457d4400f6dcbb7f0bde6a8bb8e1657db933736f0a'
-    sha256 cellar: :any_skip_relocation, sequoia: 'c8955a61b8518ca1b0baa50aa2060b3ac399c6bd14258664b8d8c2392ee25144'
-    sha256 cellar: :any_skip_relocation, x86_64_linux: '9e9594afe615f34577853bce5aac9bd8eddc1b60f1f64938c2ed5d7701be9f84'
+    root_url "https://github.com/kreuzberg-dev/tree-sitter-language-pack/releases/download/v1.8.0-rc.26"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "f7847fc2c75d3f278b2eb08cbc9458ca42e58fa3c99f34400378174dfb14c3c5"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "45e8b921a31062ae4a03af99780628adfa579859ae7f854c13469bfe33655732"
+    sha256 cellar: :any_skip_relocation, sequoia: "705740fffe95d07aff1ea5a91545e4c5f36b64903eead22adee9eda8a805d837"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "47655b58c458a4c31eb079859abd19443ef0004e8b2d79b3085689a66fd3ce09"
   end
 
   depends_on 'rust' => :build

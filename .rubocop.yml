@@ -17,3 +17,8 @@ Naming/HeredocDelimiterNaming:
 # Formula files can exceed default line length
 Layout/LineLength:
   Max: 150
+
+# Homebrew formula install/test blocks use DSL methods (install, inreplace, etc.)
+# that inflate ABC size metrics; not meaningful for declarative formulas.
+Metrics/AbcSize:
+  Enabled: false

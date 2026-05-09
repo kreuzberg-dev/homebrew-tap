@@ -4,34 +4,30 @@
 class LibhtmlToMarkdown < Formula
   desc "C library for HTML to Markdown conversion (FFI bindings)"
   homepage "https://github.com/kreuzberg-dev/html-to-markdown"
-  version "3.4.0-rc.44"
+  version "3.4.0-rc.45"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "Downloading html-to-markdown-rs-ffi-v3.4.0-rc.44-aarch64-apple-darwin.tar.gz...
-ef6bc9e096a770e9717bb3f93a52cc0d81600d24197473a99e885d588f575fd7"
+      sha256 "f0aecf2e6229829c90d2645c04e1096b2da5653e0ad82c85a2f7de41d1dd1f43"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "Downloading html-to-markdown-rs-ffi-v3.4.0-rc.44-x86_64-apple-darwin.tar.gz...
-ee4939c0855d0b91d61d52c75468e3d3fc6ff67756b7af6fad11724335283dfa"
+      sha256 "a7561604b1e294f9fe1bad1155362f5b20172bb9687101ef5fd3bafe33782171"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "Downloading html-to-markdown-rs-ffi-v3.4.0-rc.44-aarch64-unknown-linux-gnu.tar.gz...
-8368c30d6d436a47adce590498ebad1af0eba1137a662d61e361e71223ed47bd"
+      sha256 "265dc7c6ae38c494326525a53dddbbac96803ff25da3d0e749602f0d7e63226f"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "Downloading html-to-markdown-rs-ffi-v3.4.0-rc.44-x86_64-unknown-linux-gnu.tar.gz...
-04c23d254cafd58d1deda05cd5bdde0379ff00c3b3a9b48285bf8754c8b93a04"
+      sha256 "ebc04dc892648032bbd4ee05921ff2cf3278949701b3d80b37342a2ecdf7d637"
     end
   end
 

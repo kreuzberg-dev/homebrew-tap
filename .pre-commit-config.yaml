@@ -33,3 +33,8 @@ repos:
     hooks:
       - id: rubocop
       - id: shfmt
+
+  - repo: https://github.com/Goldziher/gh-actions-updater
+    rev: v0.1.1
+    hooks:
+      - id: gh-actions-updater

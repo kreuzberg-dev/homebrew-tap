@@ -11,7 +11,7 @@ class Alef < Formula
   on_macos do
     if Hardware::CPU.arm?
       url 'https://github.com/kreuzberg-dev/alef/releases/download/v0.4.1/alef-aarch64-apple-darwin.tar.gz'
-      sha256 "568546591e8bb570222778d26b3d761265aaa7ba3b1244c0edf9e75709c5e124"
+      sha256 "edadc9f8d4bd41635d9bfdc50bcd728cc2e4ca8b22d6d9b7562da2f709d1044f"
 
       define_method(:install) do
         bin.install 'alef'
@@ -22,14 +22,14 @@ class Alef < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url 'https://github.com/kreuzberg-dev/alef/releases/download/v0.4.1/alef-x86_64-unknown-linux-gnu.tar.gz'
-      sha256 "568546591e8bb570222778d26b3d761265aaa7ba3b1244c0edf9e75709c5e124"
+      sha256 "edadc9f8d4bd41635d9bfdc50bcd728cc2e4ca8b22d6d9b7562da2f709d1044f"
       define_method(:install) do
         bin.install 'alef'
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url 'https://github.com/kreuzberg-dev/alef/releases/download/v0.4.1/alef-aarch64-unknown-linux-gnu.tar.gz'
-      sha256 "568546591e8bb570222778d26b3d761265aaa7ba3b1244c0edf9e75709c5e124"
+      sha256 "edadc9f8d4bd41635d9bfdc50bcd728cc2e4ca8b22d6d9b7562da2f709d1044f"
       define_method(:install) do
         bin.install 'alef'
       end
@@ -62,6 +62,6 @@ bottle do
 end
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/alef/releases/download/v0.19.2"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "585200943d6124f379f7d94f84a86784f9471c100f468d0cd4ecfba364be5094"
+    root_url "https://github.com/kreuzberg-dev/alef/releases/download/v0.19.3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "16da91c8cd29924e7546f5eb17b85eb90d07d25840631dcf72abc866de63b631"
   end

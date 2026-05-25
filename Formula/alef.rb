@@ -5,13 +5,13 @@
 class Alef < Formula
   desc 'Opinionated polyglot binding generator for Rust libraries'
   homepage 'https://github.com/kreuzberg-dev/alef'
-  version "0.19.9"
+  version "0.19.10"
   license 'MIT'
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kreuzberg-dev/alef/archive/v0.19.9.tar.gz"
-      sha256 "62c5dc0206b51d33934fe35fa1bb2aa3ce3ade08e1fa4e0a430a7c5b80fe764c"
+      url "https://github.com/kreuzberg-dev/alef/archive/v0.19.10.tar.gz"
+      sha256 "2e809760fd325d46c1ec7739ea23827a21ccf32bef0438872db81cd4b1070dd2"
 
       define_method(:install) do
         bin.install 'alef'

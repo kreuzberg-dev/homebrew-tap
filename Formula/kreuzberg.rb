@@ -7,12 +7,14 @@ class Kreuzberg < Formula
   url "https://github.com/kreuzberg-dev/kreuzberg/archive/v5.0.0-rc.2.tar.gz"
   sha256 "f7eb5dbe75f7d67596ec0a0fac547b719233a48cd508945f2cee80509792f7cf"
   license 'MIT'
-  head 'https://github.com/kreuzberg-dev/kreuzberg.git', branch: 'main'
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v4.9.8"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "5d3ce96749f02a90c4ea4dd3515a9852e3e5b5f0ae0f923f2504edb6face8482"
+    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v5.0.0-rc.2"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "ca9f3ed057b12ccde4b029d2527b6a4d5880fb43f28df48dc0241f1fd25696ed"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "3615f4856f4fedd9b45bd67b8284a1471efc67123559551b13d11c3748cb54b2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8782dbf83d73a4d614350a1168b64b06b43e3450119f1fd05726e1b548da16b1"
   end
+  head 'https://github.com/kreuzberg-dev/kreuzberg.git', branch: 'main'
 
   depends_on 'cmake' => :build
   depends_on 'pkg-config' => :build

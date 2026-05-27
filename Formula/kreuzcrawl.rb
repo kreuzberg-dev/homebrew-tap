@@ -9,11 +9,11 @@ class Kreuzcrawl < Formula
   license 'Elastic-2.0'
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/kreuzcrawl/releases/download/v0.3.0-rc.35"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "494d63d9413e3addbbcd9513e7c8b0ff9e965f9949ae20b9183fa6215030de80"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "d3516c902103528adb7d9214265cf6e7d3578d1504d426e09198441dec2269e5"
-    sha256 cellar: :any_skip_relocation, sequoia: "dc795109d1d2b83f3aacfbdc44bcd9e2daad24b40342424de93308e51a33e2ab"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5923916698dcd7f82a8cba36d72bed793da15df88f1cba466629e12255b4e090"
+    root_url "https://github.com/kreuzberg-dev/kreuzcrawl/releases/download/v0.3.0-rc.36"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "ef7d197220e18db2ba1e2705d458cb94a4d480ab18f670647775496ac44df0a6"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "70833c3261cb682f0669d64ea36e00c81a1da51243c938a9df533accb4d9a549"
+    sha256 cellar: :any_skip_relocation, sequoia: "c0e6e988c0827d87607ec4dffbb521cffb5ffaa6dc43ab99ab13c4f3ee05e147"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "91343843c05794cf70cb7848f9a3fbaec10f5b1cffe0026ba0b6f379f52fcf11"
   end
 
   head 'https://github.com/kreuzberg-dev/kreuzcrawl.git', branch: 'main'

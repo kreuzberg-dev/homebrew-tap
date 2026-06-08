@@ -4,38 +4,30 @@
 class LibhtmlToMarkdown < Formula
   desc "C library for HTML to Markdown conversion (FFI bindings)"
   homepage "https://github.com/kreuzberg-dev/html-to-markdown"
-  version "3.6.0-rc.22"
+  version "3.6.0-rc.23"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v3.6.0-rc.22"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "fa6c547467c3053fab10130429a062e2fc44a802dcdb456827c26d0aa7256b42"
-    sha256 cellar: :any, arm64_sequoia: "6e09d06f4c7f55f51917c1387c59794caa0509ae4c5e0de69db4e87d4b65a749"
-    sha256 cellar: :any, sequoia: "3d8bc6c90451082a0bd9f60cd986c062cd84bc446c1c796aecdb5216d9a3d477"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ac4722479caca0b300f76a4454b61ba896548b658b33d981e2d6b07c9af29138"
-  end
 
   on_macos do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "7dda18090f31096f6ceab6c5e390615d122272aced8837e4081babc8f2cefd69"
+      sha256 "1a4cdbfbdbf3d1cc840f83b1286e5a9b3bf5cf8b4081ca2ca25f461f2c7eaa73"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "2ffcfabe0a10392d60c1903fd0ece68d16bfabc8cf6915eacaec7987e341d5d1"
+      sha256 "0547577ebdfa364a889634635732d08b67cb1af02f1d7a1da75f46531aa1af81"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8fb6be39cfb67cc5379dcf18240a3af92a093ee2107f85715a5f567706cd9e91"
+      sha256 "54efcae5170b7c4f47b58841e6d66a51fadab3789799877a8b8a32695be87b88"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1d269faa647ffa60500ad03ece6f2ac8c3b719593aca4da2359b73e011cf6788"
+      sha256 "e3d0bd66e6c44dc6fc256096126bb06f49e103845ec0a3ee546027f8b0eb9a04"
     end
   end
 

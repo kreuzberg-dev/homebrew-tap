@@ -10,24 +10,24 @@ class HtmlToMarkdown < Formula
   on_macos do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/cli-aarch64-apple-darwin.tar.gz"
-      sha256 "f9600cef2f0d188147bc1f133ae2189d8bd5c34b2daaaae7761afb174b2443e5"
+      sha256 "0e322453734d0165991c66c7acaaaf9667c865dd63bdcc2b7b87e9fa8a1b12e4"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/cli-x86_64-apple-darwin.tar.gz"
-      sha256 "4fc41861147dc69dcfb2911bbfbc8280315222d874deeaf9f1edf3e1cc7ef55d"
+      sha256 "c34b56e0ac1996470b92cf28d8e33d480f539c15fd27d2f77cd02e4461b655eb"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/cli-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "65a62938d31911a7ab088627924cadbfd508efc398d393789860e8c05dedf0fc"
+      sha256 "863700a8724d64f235a6786bc8f6aab4fbd2254e49a508dfcaae227c1d567ca8"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/cli-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a724bd9bb21fa8b4b99707c52671e886c220454957407b3e36cd318b42909062"
+      sha256 "b3c4518716235cf85f4c00199cb21b715007659440210a1d8264483af945b0d7"
     end
   end
 

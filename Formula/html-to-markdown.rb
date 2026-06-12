@@ -9,10 +9,10 @@ class HtmlToMarkdown < Formula
 
   bottle do
     root_url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v3.6.1"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "77ee0123032fd16ccc5a8cdca8d0ad2ac784be22508cbb5794f55f26d72e76b2"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f1af13b2e5c0c1bbe84a0745ab701bd800b1adde2db2e9d44e3be90488c489f1"
-    sha256 cellar: :any_skip_relocation, sequoia: "d87d76a3f9bbf839f44e4283ae941044ba90638f74dc2848aeac4d5107597414"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9ed2283da190ddf02bbd4e79dc13750df9e05444302609b53de73f8968e499a6"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "05d10f3fb66d7ef4361aad02f8a0ef871ac43721c2550583e714c491b1a6ddf3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1ec3cf5e0af33e33b069d5eb21b591817c4112dc1999975c59d340a59c25c29a"
+    sha256 cellar: :any_skip_relocation, sequoia: "7f1da688fd39c753939275b334e0aba0f23f7a8b48e9e98c33c65b88b0609a25"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0b7c3ebf0df5b5e21e2fdf792304da177c00a6619a2cded230d219e60a3ab8e5"
   end
 
   on_macos do

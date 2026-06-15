@@ -8,11 +8,11 @@ class LibhtmlToMarkdown < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v3.6.8"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "073d1307fceffff57168a15d2f6aa96b473c6c523c8cee6fa38259c8a1fe1625"
-    sha256 cellar: :any, arm64_sequoia: "24a819655e037ce2ac6e7c06e65fd7f437981329ada09095de6495d32e53ee2e"
-    sha256 cellar: :any, sequoia: "d7c49faddca16f52a55af6080aaae0ca98cfa87fe2a5c820a02e9b83e3a83817"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3c4654607c1c1d260b82f1cfb201fe980a7e4602623e851221576cacc9c60285"
+    root_url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v3.6.9"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "35c8f0376cdf38f9b1d981b6820a28a0ac7573cdd3135e3b4d0168c051e22567"
+    sha256 cellar: :any, arm64_sequoia: "bf1ce7e302254b065d86968e1e9cf8870cccac3b7bfee8672b52e9912b938bf3"
+    sha256 cellar: :any, sequoia: "b0a4d66e95514f7ebbca361a071c0e48d3ea9fabbbc7616ff5f7bbea482f42fe"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8548e460cfd6964ae0e11b828b3f65f60c4b8366643b844d30e5671ad945a445"
   end
 
   on_macos do

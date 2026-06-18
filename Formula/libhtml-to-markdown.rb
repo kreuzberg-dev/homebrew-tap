@@ -4,38 +4,30 @@
 class LibhtmlToMarkdown < Formula
   desc "C library for HTML to Markdown conversion (FFI bindings)"
   homepage "https://github.com/kreuzberg-dev/html-to-markdown"
-  version "3.6.14"
+  version "3.6.15"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v3.6.14"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "2a1b6c2014fa1096236b4a63ecd11ba0e38cb778f73155a29e4a1f1310ad1e83"
-    sha256 cellar: :any, arm64_sequoia: "e7ec27410ea140680ece9930a121e109f4942fa228d1a7a3b47d261e1a5abf3b"
-    sha256 cellar: :any, sequoia: "a89bb5cf7068edd326e96771ead373a8eb02449e26c5ebebc66ec564fa15e01b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "437fd8a7c9cf3eb9a9e60a972b7fcc24d327ffb2962e237d3fb987c76a6364be"
-  end
 
   on_macos do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "ddca3de3c9ad757329736cfcfa5786c9ee2e5ac0eb19bab9ed8e960708e836ee"
+      sha256 "945f9dd1709bd8776c40490cd5a1baa7f819e7939d0677599e5a2acd3638bee3"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "1bca18fe4173610868da17ee0cc15be09d47ab47b42c9f984356b856e09c846c"
+      sha256 "52b05cff43f315e5955a6a226d451436514963e1ef8a446a3065d50463a33f2e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b439d56e604e4f98356ec48a3d36aebcb3c3b29e1b3a0f44567329c3cea33f7c"
+      sha256 "9e2e382a91355d38f8b9078d82cd96b67c80fdbe500d6de6747f7ffc69c3d67d"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2aa1c1744aee87a78d28aab84021a47bda21c95ee1b31a6dc79839e90bf5e82c"
+      sha256 "86ea7fb582b19d45c098c8b9a889ae1205d38d98cffb6a96b73df3427bb8e2e9"
     end
   end
 

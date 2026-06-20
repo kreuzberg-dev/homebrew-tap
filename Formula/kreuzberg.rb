@@ -8,18 +8,14 @@ class Kreuzberg < Formula
   sha256 "6d2abedc75b4f2ad9e6690981eb697f620e4c1bece9888ad62a15de36be7a6a2"
   license 'MIT'
 
-  bottle do
-    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v5.0.0-rc.14"
-    sha256 cellar: :any, arm64_linux: "de5951fd983e994755176a9b4f888a4b940a96b7351642f47b5b2ac94f20f867"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "90e2194d5f0bd076c98b7dd605cdb72fff48d628c6dd4b23767b184f5a5c1d90"
-    sha256 cellar: :any, x86_64_linux: "b19bb2a8d26ef03110b62b3b1c524608224778c04b4865ecd4255e6020cb41e3"
-  end
-
   head 'https://github.com/kreuzberg-dev/kreuzberg.git', branch: 'main'
 
   depends_on 'cmake' => :build
   depends_on 'pkg-config' => :build
   depends_on 'rust' => :build
+  depends_on 'libheif'
+  depends_on 'openssl@3'
+  depends_on 'tesseract'
 
   def install
     ENV['OPENSSL_DIR'] = Formula['openssl'].opt_prefix

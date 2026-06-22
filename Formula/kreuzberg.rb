@@ -9,10 +9,10 @@ class Kreuzberg < Formula
   license 'MIT'
 
   bottle do
-    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v5.0.0-rc.27"
-    sha256 cellar: :any, arm64_linux: "500e40e5e7594714b5f2891ec414549410705fa068eaa1e556a5b61a9a470e37"
-    sha256 cellar: :any, arm64_sequoia: "83d83668e8acd9a37cf522164884ef725ac414ec209cc7cd2daaddaf7d896152"
-    sha256 cellar: :any, x86_64_linux: "3dbd3b99644c4bc2aa060b30e890c8453ff11032448c0808109ea116ebd8dca0"
+    root_url "https://github.com/kreuzberg-dev/kreuzberg/releases/download/v5.0.0-rc.28"
+    sha256 cellar: :any, arm64_linux: "3031b5ce4b4554149c33cd9a430c4f63d4e81c0a20fd8652e664852c4ba84069"
+    sha256 cellar: :any, arm64_sequoia: "464311d8868cebf5721f3a06382bfc0bf680a3b54a842f0d4d97677a462ef2db"
+    sha256 cellar: :any, x86_64_linux: "b503750bfd53e2e3cde2edcf10961a7287c79bedc5e56b83bbb0dcbbae932794"
   end
 
   head 'https://github.com/kreuzberg-dev/kreuzberg.git', branch: 'main'

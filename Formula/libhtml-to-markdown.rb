@@ -4,30 +4,30 @@
 class LibhtmlToMarkdown < Formula
   desc "C library for HTML to Markdown conversion (FFI bindings)"
   homepage "https://github.com/kreuzberg-dev/html-to-markdown"
-  version "3.6.20"
+  version "3.6.21"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "8829eb8b05a531db837b26901dd7da1b9282fd633320fa59e04071aea06ada67"
+      sha256 "e1762300d9f648c9e4e6530f012e31cb2e4d4fcd356f08efb9213b3f3853756c"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "11f382ba933bc6d72c37350ccfc9259c5c6bc05d57b97d2f3425c17ff3880f73"
+      sha256 "0e025f2e14c923b8d5f9c3b356e06b80d214a6c20c1ef9f1782ccda4c218cb89"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1f90b6fdb350502b0e5e4f223293a9017bc62a6d393dd311b1da82e2995b323b"
+      sha256 "7ccca929d00ee0e6aa7ecd9f3dbc938f42773935e92eea4e7ef932d343204cab"
     end
 
     on_intel do
       url "https://github.com/kreuzberg-dev/html-to-markdown/releases/download/v#{version}/html-to-markdown-rs-ffi-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ea0e6a8799947c07bcabfb9e0dd7f59302a9ee91e3a33da62e53079b9d001316"
+      sha256 "a497ccf9e89d8bc0c8950adf15671c15e15dcaebfa7b21677479c0fe933dde9d"
     end
   end
 

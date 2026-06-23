@@ -4,8 +4,8 @@
 class LiterLlm < Formula
   desc 'Universal LLM API client with native bindings for 14 languages'
   homepage 'https://kreuzberg.dev'
-  url "https://github.com/kreuzberg-dev/liter-llm/archive/v1.8.0.tar.gz"
-  sha256 "59584215cee486624bc92471ac9741feab072a19c70987c3b3a3301ca03ae5e0"
+  url "https://github.com/kreuzberg-dev/liter-llm/archive/v1.8.1.tar.gz"
+  sha256 "ee59f5b4d231da4439703f470c7dcd9a573b5f2c6af336aac7f753804fe6b132"
   license 'MIT'
 
   bottle do

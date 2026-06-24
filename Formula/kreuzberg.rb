@@ -3,7 +3,7 @@
 
 class Kreuzberg < Formula
   desc 'High-performance document intelligence CLI'
-  homepage 'https://kreuzberg.dev'
+  homepage 'https://xberg.io'
   url "https://github.com/xberg-io/kreuzberg/archive/v5.0.0-rc.32.tar.gz"
   sha256 "73cb59f4b5ea9e7ed5919b1d8b71add947dd5d66cc2445ac88a8c26ff18a048a"
   license 'MIT'

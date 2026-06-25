@@ -7,10 +7,10 @@ priority: medium
 ## Formula Types
 
 **Source-build** (Rust/CMake, compile on install):
-- `kreuzberg.rb`, `alef.rb`, `crawlberg.rb` — build from tarball via `cargo install`
+- `xberg.rb`, `alef.rb`, `crawlberg.rb` — build from tarball via `cargo install`
 
 **Binary-only** (pre-built platform-specific artifacts):
-- `kreuzberg-ffi.rb`, `libhtml-to-markdown.rb` — install pre-compiled `.dylib`/`.so`/`.a` + headers
+- `xberg-ffi.rb`, `libhtml-to-markdown.rb` — install pre-compiled `.dylib`/`.so`/`.a` + headers
 
 ## Version Bump Checklist
 

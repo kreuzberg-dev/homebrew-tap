@@ -3,13 +3,13 @@
 
 version = '4.0'
 name = 'homebrew-tap'
-description = 'Homebrew tap with formulas for kreuzberg-dev CLI tools'
+description = 'Homebrew tap with formulas for xberg-io CLI tools'
 gitignore = true
 presets = ['claude', 'codex', 'copilot', 'cursor', 'antigravity']
 builtins = ['ruby', 'default-commands']
 
 [[includes]]
-name = 'kreuzberg-core'
+name = 'xberg-core'
 source = 'https://github.com/xberg-io/ai-rulez.git'
 path = 'modules/core'
 merge_strategy = 'local-override'

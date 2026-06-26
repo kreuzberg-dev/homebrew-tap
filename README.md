@@ -1,17 +1,17 @@
 # xberg-io/homebrew-tap
 
-Homebrew tap for Kreuzberg packages.
+Homebrew tap for Xberg packages.
 
 ## Installation
 
 ```bash
 brew tap xberg-io/tap
-brew install kreuzberg
+brew install xberg
 ```
 
 ## Installation Speed
 
-Kreuzberg uses pre-built bottles for faster installation:
+Xberg uses pre-built bottles for faster installation:
 - With bottles: ~10 seconds
 - Building from source: ~5-15 minutes
 
@@ -28,6 +28,6 @@ Pre-built bottles are available for:
 ## Uninstall
 
 ```bash
-brew uninstall kreuzberg
+brew uninstall xberg
 brew untap xberg-io/tap
 ```

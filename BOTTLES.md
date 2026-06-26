@@ -1,6 +1,6 @@
 # Homebrew Bottle Distribution
 
-This document describes how Kreuzberg bottles are built, distributed, and maintained.
+This document describes how Xberg bottles are built, distributed, and maintained.
 
 ## What are Homebrew Bottles?
 
@@ -29,7 +29,7 @@ cd homebrew-tap
 ```
 
 This script:
-1. Installs kreuzberg with `--build-bottle` flag (optimized for binary distribution)
+1. Installs xberg with `--build-bottle` flag (optimized for binary distribution)
 2. Runs `brew bottle` to generate the bottle file (.tar.gz)
 3. Outputs the SHA256 hash needed for the formula
 
@@ -43,8 +43,8 @@ Bottles should be built in CI for each target platform:
 
 Each build should:
 ```bash
-brew install --build-bottle kreuzberg
-brew bottle kreuzberg
+brew install --build-bottle xberg
+brew bottle xberg
 ```
 
 The resulting `.tar.gz` file and the output from `brew bottle` will provide the SHA256 hash.
@@ -54,10 +54,10 @@ The resulting `.tar.gz` file and the output from `brew bottle` will provide the 
 When bottles are ready for release:
 
 1. **Get SHA256 hashes** from `brew bottle` output for each platform
-2. **Update `Formula/kreuzberg.rb`**:
+2. **Update `Formula/xberg.rb`**:
    ```ruby
    bottle do
-     root_url "https://github.com/xberg-io/kreuzberg/releases/download/vX.Y.Z"
+     root_url "https://github.com/xberg-io/xberg/releases/download/vX.Y.Z"
      sha256 cellar: :any_skip_relocation, arm64_sequoia: "actual_hash_here"
      sha256 cellar: :any_skip_relocation, arm64_sonoma: "actual_hash_here"
      sha256 cellar: :any_skip_relocation, ventura: "actual_hash_here"
@@ -66,7 +66,7 @@ When bottles are ready for release:
    ```
 3. **Update `root_url`** to point to the release version
 4. **Upload bottles** to GitHub Releases under the corresponding version tag
-5. **Test locally**: `brew install kreuzberg` should use the bottle, not build from source
+5. **Test locally**: `brew install xberg` should use the bottle, not build from source
 
 ## Release Checklist
 
@@ -75,10 +75,10 @@ When releasing a new version with bottles:
 - [ ] Build bottles for all 4 platforms
 - [ ] Verify bottle SHA256 hashes
 - [ ] Upload `.tar.gz` files to GitHub Releases
-- [ ] Update `Formula/kreuzberg.rb` with new version, SHA256, and bottle hashes
+- [ ] Update `Formula/xberg.rb` with new version, SHA256, and bottle hashes
 - [ ] Update `root_url` in bottle block to new release tag
-- [ ] Test installation: `brew install kreuzberg` (should use bottle)
-- [ ] Verify no build dependencies required: `brew deps kreuzberg` (should be empty)
+- [ ] Test installation: `brew install xberg` (should use bottle)
+- [ ] Verify no build dependencies required: `brew deps xberg` (should be empty)
 - [ ] Commit and push changes to homebrew-tap repository
 
 ## Troubleshooting
@@ -111,7 +111,7 @@ Then update with real hash after the build completes.
 ```
 homebrew-tap/
 ├── Formula/
-│   └── kreuzberg.rb          # Main formula with bottle block
+│   └── xberg.rb          # Main formula with bottle block
 ├── scripts/
 │   └── build-bottles.sh      # Local bottle build script
 ├── README.md                 # Installation instructions
@@ -123,4 +123,4 @@ homebrew-tap/
 
 - [Homebrew Bottle Documentation](https://docs.brew.sh/Bottles)
 - [Homebrew Formula Cookbook](https://docs.brew.sh/Formula-Cookbook)
-- [Kreuzberg GitHub Releases](https://github.com/xberg-io/kreuzberg/releases)
+- [Xberg GitHub Releases](https://github.com/xberg-io/xberg/releases)

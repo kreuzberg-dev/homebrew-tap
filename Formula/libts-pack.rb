@@ -2,62 +2,54 @@
 # frozen_string_literal: true
 
 class LibtsPack < Formula
-  desc 'C library for tree-sitter language pack (FFI bindings)'
-  homepage 'https://github.com/xberg-io/tree-sitter-language-pack'
-  version '1.10.9'
-  license any_of: ['MIT', 'Apache-2.0']
-
-  bottle do
-    root_url 'https://github.com/xberg-io/tree-sitter-language-pack/releases/download/v1.10.9'
-    sha256 cellar: :any_skip_relocation, arm64_linux: 'e13cb4d28ef0d84f408b220f8ddbbbe37462b9e52046b64827bd53b058c10489'
-    sha256 cellar: :any, arm64_tahoe: '2b16ceb2daef9cb5efa5f160606675c896f1c503e6c0ab3c8448b34ce418957f'
-    sha256 cellar: :any, sequoia: '1bbac2d1dd1b5630ef639ec66bcc37492e824a8509ec34e5ea92f00929bfbf7a'
-    sha256 cellar: :any_skip_relocation, x86_64_linux: '2b27655ac13b1925f56c3b6b8d9b7d528bc7ece06425ea3c712476e6e2db1192'
-  end
+  desc "C library for tree-sitter language pack (FFI bindings)"
+  homepage "https://github.com/xberg-io/tree-sitter-language-pack"
+  version "1.11.0-rc.2"
+  license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/xberg-io/tree-sitter-language-pack/releases/download/v#{version}/tree-sitter-language-pack-ffi-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 '15c21e163fdc7da5ae6289084d129d65d72e4788a828d354600c74c16637d7ea'
+      sha256 "221aa770475d3ac53cd80ced72ed9610b828c03f00c73da96a8fba7ce83c6b8b"
     end
 
     on_intel do
       url "https://github.com/xberg-io/tree-sitter-language-pack/releases/download/v#{version}/tree-sitter-language-pack-ffi-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 '4f8b74269a8662ce6c365363e4234409391ba1756d5fc58d75e3761c1c4e79de'
+      sha256 "f26d77d93724b49a5d557d3b5dac30c5ae0e6cc2d008012b43185fe755c085e9"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/xberg-io/tree-sitter-language-pack/releases/download/v#{version}/tree-sitter-language-pack-ffi-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 'c74a5b7a4dfe0da4350375fa43f43c96847e0dfe22c2be2494f4b6aa7035aea9'
+      sha256 "cb514c76594e8269468c9310480872da8facb738cf80a6e416f8f2db395a0de2"
     end
 
     on_intel do
       url "https://github.com/xberg-io/tree-sitter-language-pack/releases/download/v#{version}/tree-sitter-language-pack-ffi-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 'a49380689ac19133ff29af542721a862ce0da1e98118f2ef76bb9c77191e158d'
+      sha256 "911dc58fed7686ab211b56e0cbb063c796886990eda3421556cf64b366ea5bde"
     end
   end
 
   def install
-    include.install Dir['include/*.h']
+    include.install Dir["include/*.h"]
 
     if OS.mac?
-      lib.install Dir['lib/*.dylib']
+      lib.install Dir["lib/*.dylib"]
     elsif OS.linux?
-      lib.install Dir['lib/*.so']
+      lib.install Dir["lib/*.so"]
     end
-    lib.install Dir['lib/*.a']
+    lib.install Dir["lib/*.a"]
 
-    (lib / 'pkgconfig').install 'share/pkgconfig/tree-sitter-language-pack.pc'
+    (lib / "pkgconfig").install "share/pkgconfig/tree-sitter-language-pack.pc"
 
-    inreplace lib / 'pkgconfig/tree-sitter-language-pack.pc', /prefix=.*/, "prefix=#{prefix}"
+    inreplace lib / "pkgconfig/tree-sitter-language-pack.pc", /prefix=.*/, "prefix=#{prefix}"
 
-    (lib / 'cmake/tree-sitter-language-pack').install Dir['lib/cmake/tree-sitter-language-pack/*']
+    (lib / "cmake/tree-sitter-language-pack").install Dir["lib/cmake/tree-sitter-language-pack/*"]
   end
 
   test do
-    (testpath / 'test.c').write <<~C
+    (testpath / "test.c").write <<~C
       #include <ts_pack.h>
       #include <stdio.h>
       int main(void) {
@@ -68,8 +60,8 @@ class LibtsPack < Formula
       }
     C
 
-    system ENV.cc, 'test.c', '-o', 'test',
-           "-I#{include}", "-L#{lib}", '-lts_pack_core_ffi'
-    assert_match 'ts_pack OK', shell_output('./test')
+    system ENV.cc, "test.c", "-o", "test",
+           "-I#{include}", "-L#{lib}", "-lts_pack_core_ffi"
+    assert_match "ts_pack OK", shell_output("./test")
   end
 end

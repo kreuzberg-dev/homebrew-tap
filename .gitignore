@@ -1,4 +1,7 @@
 
+# polylint cache
+.polylint/
+
 # Additional generated artifacts
 .remote-cache/
 .alef/
